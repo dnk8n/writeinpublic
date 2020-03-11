@@ -26,5 +26,5 @@ script:
 after_script:
   - coveralls --verbose
 env:
-  - DB=postgres ES_VERSION=1.4.5 ES_DOWNLOAD_URL=https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-${ES_VERSION}.tar.gz
-  - DB=sqlite3 ES_VERSION=1.4.5 ES_DOWNLOAD_URL=https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-${ES_VERSION}.tar.gz
+  - DB=postgres ES_VERSION=0.90.13 ES_DOWNLOAD_URL=https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-${ES_VERSION}.tar.gz
+  - DB=sqlite3 ES_VERSION=0.90.13 ES_DOWNLOAD_URL=https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-${ES_VERSION}.tar.gz
