@@ -36,3 +36,4 @@ conf/local_settings.py.deployed
 /.venv
 .idea/
 .vagrant
+*.pid
