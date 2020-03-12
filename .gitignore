@@ -35,3 +35,4 @@ conf/local_settings.py.deployed
 /.static
 /.venv
 .idea/
+.vagrant
