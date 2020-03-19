@@ -1,6 +1,6 @@
 FROM python:2.7.17
 
-RUN apt-get update && apt-get install -y yui-compressor
+RUN apt-get update && apt-get install -y gettext yui-compressor
 COPY ./requirements.txt /app/
 RUN pip install --no-cache-dir -r /app/requirements.txt && pip install psycopg2
 COPY ./ /app/
