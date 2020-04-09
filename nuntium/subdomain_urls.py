@@ -57,8 +57,8 @@ from nuntium.user_section.views import (
 from nuntium.user_section.stats import StatsView
 
 # Uncomment the next two lines to enable the admin:
-# from django.contrib import admin
-# admin.autodiscover()
+from django.contrib import admin
+admin.autodiscover()
 download_attachment_view = ObjectDownloadView.as_view(model=AnswerAttachment, file_field="content")
 
 managepatterns = patterns('',
