@@ -30,6 +30,7 @@ django-object-actions==0.8.2
 django-pagination==1.0.7
 django-pipeline==1.5.4
 django-plugins==0.3.0
+django-sendgrid-v5==0.8.1
 django-subdomains==2.0.4
 django-tastypie==0.13.3
 elasticsearch==0.4.5
@@ -63,6 +64,7 @@ pytz==2016.4
 PyYAML==3.11
 requests==2.11.1
 requests-oauthlib==0.7.0
+sendgrid==6.2.0
 simplejson==3.8.2
 six==1.10.0
 slumber==0.7.1
