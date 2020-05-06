@@ -39,6 +39,9 @@ class MailitTemplateUpdateView(UpdateView):
 
 
 class IncomingMail(View):
+    def get(self, request):
+        return HttpResponse()
+
     def post(self, request):
         print(request.POST['email'])  # TODO: clean up print statement
         handler = EmailHandler(answer_class=OutboundMessageAnswer)
