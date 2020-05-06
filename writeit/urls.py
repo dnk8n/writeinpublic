@@ -5,6 +5,7 @@ from django.contrib import admin
 
 from tastypie.api import Api
 
+from mailit.views import IncomingMail
 from nuntium.views import RootRedirectView
 from nuntium.api import WriteItInstanceResource, MessageResource, AnswerCreationResource, HandleBouncesResource, PersonResource
 
@@ -28,6 +29,7 @@ urlpatterns = patterns('',
 
     # TODO: These can probably be removed at some point.
     url(r'^contactos/', include('contactos.urls')),
+    url(r'^incoming_mail/$', IncomingMail.as_view(), name='incoming_mail'),
 )
 
 urlpatterns += i18n_patterns('',
