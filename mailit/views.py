@@ -43,7 +43,9 @@ class IncomingMail(View):
         return HttpResponse()
 
     def post(self, request):
-        print(request.POST['email'])  # TODO: clean up print statement
+        print(request.META)
+        print(request.body)  # TODO: clean up print statement
+
         handler = EmailHandler(answer_class=OutboundMessageAnswer)
         try:
             answer = handler.handle(request.POST['email'])
